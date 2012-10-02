@@ -73,7 +73,7 @@ public class HBaseMapReduceExample {
 				byte[] predQualifier = Bytes.toBytes("subject");
 				byte[] objQualifier = Bytes.toBytes("subject");
 	    		// keep a global counter to give each line a unique statement ID
-				String sid = context.getCounter(Counters.LINES).toString();
+				long sid = context.getCounter(Counters.LINES).getValue();
 				byte[] byteSid = Bytes.toBytes(sid);
 				// initialize rdf parsing machinery
 				String lineString = line.toString();
