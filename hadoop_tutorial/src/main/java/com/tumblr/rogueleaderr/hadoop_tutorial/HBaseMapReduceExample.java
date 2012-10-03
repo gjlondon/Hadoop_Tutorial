@@ -62,7 +62,7 @@ public class HBaseMapReduceExample {
 	     */
 
 	    @Override
-	    public void map(LongWritable offset, Text line, Context context) // co ImportFromFile-3-Map The map() function transforms the key/value provided by the InputFormat to what is needed by the OutputFormat.
+	    public void map(LongWritable offset, Text line, Context context) // The map() function transforms the key/value provided by the InputFormat to what is needed by the OutputFormat.
 	    throws IOException {
 	    	try {        
 				// declare the table we'll be inserting into
